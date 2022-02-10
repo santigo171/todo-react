@@ -12,7 +12,6 @@ function TodoItem(props) {
   }
 
   const [fontSize, setFontSize] = React.useState("3.2rem");
-  setFontSize(fontSize);
   return (
     <div className={classesNames.join(" ")}>
       <span className="TodoItem__circle"></span>
