@@ -1,0 +1,6 @@
+.TodoCounter {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-weight: normal;
+  font-size: 3.5rem;
+}

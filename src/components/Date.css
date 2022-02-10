@@ -1,0 +1,9 @@
+.Date {
+  position: relative;
+  bottom: -15px;
+  align-self: end;
+
+  font-family: var(--primary-font);
+  font-weight: normal;
+  font-size: 7.7rem;
+}

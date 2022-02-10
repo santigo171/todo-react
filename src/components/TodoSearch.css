@@ -1,0 +1,26 @@
+.TodoSearch {
+  height: 37px;
+  width: 100%;
+  padding-bottom: 6px;
+  border-bottom: 2.5px solid var(--secondary-color);
+}
+
+.TodoSearch__Lens {
+  width: 16px;
+  height: auto;
+
+  fill: var(--secondary-color);
+}
+
+.TodoSearch__input {
+  width: 100%;
+  justify-self: start;
+  font-family: var(--secondary-font);
+  font-size: 2.9rem;
+  border: none;
+  background: none;
+}
+
+.TodoSearch__input:focus {
+  outline: none;
+}

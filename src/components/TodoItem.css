@@ -1,0 +1,84 @@
+.TodoItem {
+  /* height: 40px; */
+  margin: 45px 0;
+}
+
+.TodoItem__circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.TodoItem__content {
+  width: 100%;
+  justify-self: start;
+}
+
+.TodoItem__content__text {
+  word-break: break-all;
+
+  text-align: left;
+  font-size: 3.2rem;
+  font-family: var(--secondary-font);
+}
+
+.TodoItem__content__date {
+  position: relative;
+  top: -2.5px;
+  font-size: 2rem;
+  font-family: var(--secondary-font);
+}
+
+.TodoUncompleted > .TodoItem__circle {
+  background-color: var(--complementary-color);
+}
+
+.TodoCompleted > .TodoItem__circle {
+  background-color: var(--secondary-color);
+}
+
+.TodoUncompleted {
+  color: var(--primary-color);
+}
+
+@keyframes strike {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  80% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.strike {
+  position: relative;
+}
+.strike::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: black;
+  animation-name: strike;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.TodoUncompleted:hover > .TodoItem__content > .TodoItem__content__text {
+  color: var(--secondary-color);
+  text-decoration: line-through;
+}
+
+.TodoCompleted {
+  color: var(--secondary-color);
+  text-decoration: line-through;
+}

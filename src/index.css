@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Ladylike bb";
+  src: url(resources/fonts/ladylike-bb.regular.ttf);
+  font-weight: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Pumpkin Cheesecake";
+  src: url(resources/fonts/pumpkin-cheesecake.otf);
+  font-weight: normal;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #5b5b5b;
+  --complementary-color: #f48c06;
+  --second-complementary-color: #c12c2c;
+
+  --primary-font: "Ladylike bb", sans-serif;
+  --secondary-font: "Pumpkin Cheesecake", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+ul {
+  list-style-type: none;
 }
