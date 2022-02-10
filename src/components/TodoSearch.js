@@ -1,8 +1,8 @@
 import React from "react";
 import "./TodoSearch.css";
-import "../GridLayout.css";
+import "Library/common/css/GridLayout.css";
 
-import { ReactComponent as Lens } from "../resources/img/lens.svg";
+import { ReactComponent as Lens } from "Resources/img/lens.svg";
 
 function TodoSearch({ searchValue, setSearchValue }) {
   const onSearchValueChange = (event) => {
