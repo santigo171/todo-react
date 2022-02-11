@@ -14,11 +14,14 @@ function TodoItem(props) {
   const [fontSize, setFontSize] = React.useState("3.2rem");
   return (
     <div className={classesNames.join(" ")}>
-      <span className="TodoItem__circle"></span>
+      <span className="TodoItem__circle" onClick={props.deleteTodo}>
+        X
+      </span>
       <div className="TodoItem__content">
         <p
-          className="TodoItem__content__text strike"
+          className="TodoItem__content__text"
           style={{ fontSize: fontSize }}
+          onClick={props.toggleCompleteTodo}
         >
           {props.text}
         </p>

@@ -1,57 +1,18 @@
 import React from "react";
-import { Date } from "Components/Date.js";
-import { TodoCounter } from "Components/TodoCounter.js";
-import { TodoSearch } from "Components/TodoSearch.js";
-import { TodoList } from "Components/TodoList.js";
-import { TodoItem } from "Components/TodoItem.js";
-import { CreateTodoButton } from "Components/CreateTodoButton.js";
-import "./App.css";
-
-const defaultTodos = [
-  {
-    text: "Practice Dance",
-    completed: false,
-  },
-  {
-    text: "Science Homework",
-    completed: false,
-  },
-  {
-    text: "123456789 123456789 1234567890",
-    completed: false,
-  },
-  {
-    text: "ScienceHomeworkfdasfdsafdagsadhgdasyhgasydyadygyadsy",
-    completed: false,
-  },
-  {
-    text: "Read 15 minutes my favorite book",
-    completed: false,
-  },
-  {
-    text: "Take out the trash Indoor",
-    completed: false,
-  },
-  {
-    text: "Visit India",
-    completed: true,
-  },
-  {
-    text: 'Learn how to play "Megalovania" on guitar',
-    completed: false,
-  },
-  {
-    text: "Call grandmother",
-    completed: true,
-  },
-  {
-    text: "Buy apples, grapes, papaya and bananas on Mr Juan’s store and give tips",
-    completed: true,
-  },
-];
+import { AppUI } from "./AppUI";
 
 function App() {
-  const [todos, setTodos] = React.useState(defaultTodos);
+  const localStorageTodos = localStorage.getItem("TODO_REACT_V1");
+  let parsedTodos;
+
+  if (localStorageTodos) {
+    parsedTodos = JSON.parse(localStorageTodos);
+  } else {
+    parsedTodos = [];
+    localStorage.setItem("TODO_REACT_V1", JSON.stringify(parsedTodos));
+  }
+
+  const [todos, setTodos] = React.useState(parsedTodos);
   const completedTasks = todos.filter((todo) => todo.completed).length;
   const totalTasks = todos.length;
 
@@ -67,26 +28,37 @@ function App() {
     searchedTodos = todos;
   }
 
+  const saveTodos = (newTodos) => {
+    const stringifiedTodos = JSON.stringify(newTodos);
+    localStorage.setItem("TODO_REACT_V1", stringifiedTodos);
+    setTodos(newTodos);
+  };
+
+  const toggleCompleteTodo = (completedTodoText) => {
+    const completedTodoIndex = todos.findIndex(
+      (todo) => todo.text === completedTodoText
+    );
+    const newTodos = [...todos];
+    newTodos[completedTodoIndex].completed =
+      !newTodos[completedTodoIndex].completed;
+    saveTodos(newTodos);
+  };
+
+  const deleteTodo = (todoText) => {
+    const newTodos = [...todos.filter((todo) => todo.text !== todoText)];
+    saveTodos(newTodos);
+  };
+
   return (
-    <div className="main">
-      <div className="paper">
-        <Date />
-        <TodoCounter completedTasks={completedTasks} totalTasks={totalTasks} />
-        <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-        <TodoList searchValue={searchValue}>
-          {searchedTodos.map((todo) => (
-            <TodoItem
-              key={todo.text}
-              text={todo.text}
-              completed={todo.completed}
-            />
-          ))}
-        </TodoList>
-        <CreateTodoButton />
-        {/* <a href="https://www.flaticon.com/free-icons/feather" title="feather icons">Feather icons created by Freepik - Flaticon</a> */}
-        {/* <a href="https://www.flaticon.com/free-icons/cross" title="cross icons">Cross icons created by Freepik - Flaticon</a> */}
-      </div>
-    </div>
+    <AppUI
+      completedTasks={completedTasks}
+      totalTasks={totalTasks}
+      searchValue={searchValue}
+      setSearchValue={setSearchValue}
+      searchedTodos={searchedTodos}
+      toggleCompleteTodo={toggleCompleteTodo}
+      deleteTodo={deleteTodo}
+    />
   );
 }
 
