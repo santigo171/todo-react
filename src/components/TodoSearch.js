@@ -3,8 +3,11 @@ import "./TodoSearch.css";
 import "Library/common/css/GridLayout.css";
 
 import { ReactComponent as Lens } from "Resources/img/lens.svg";
+import { TodoContext } from "./TodoContext";
 
-function TodoSearch({ searchValue, setSearchValue }) {
+function TodoSearch() {
+  const { searchValue, setSearchValue } = React.useContext(TodoContext);
+
   const onSearchValueChange = (event) => {
     setSearchValue(event.target.value);
   };

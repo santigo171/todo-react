@@ -19,6 +19,14 @@
 }
 
 :root {
+  box-sizing: border-box;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  position: relative;
+  font-family: system-ui, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  min-height: 100%;
+
   --primary-color: #000000;
   --secondary-color: #5b5b5b;
   --complementary-color: #f48c06;

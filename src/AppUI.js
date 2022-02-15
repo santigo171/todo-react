@@ -7,24 +7,19 @@ import { TodoItem } from "Components/TodoItem.js";
 import { CreateTodoButton } from "Components/CreateTodoButton.js";
 import "./App.css";
 
-function AppUI({
-  loading,
-  error,
-  completedTodos,
-  totalTodos,
-  searchValue,
-  setSearchValue,
-  searchedTodos,
-  toggleCompleteTodo,
-  deleteTodo,
-}) {
+import { TodoContext } from "Components/TodoContext";
+
+function AppUI() {
+  const { error, loading, searchedTodos, toggleCompleteTodo, deleteTodo } =
+    React.useContext(TodoContext);
   return (
     <div className="main">
       <div className="paper">
         <Date />
-        <TodoCounter completedTodos={completedTodos} totalTodos={totalTodos} />
-        <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-        <TodoList searchValue={searchValue}>
+        <TodoCounter />
+        <TodoSearch />
+
+        <TodoList>
           {error && <p>Hubo un error</p>}
           {loading && <p>Cargando</p>}
           {!loading && !searchedTodos.length && <p>Crea tu primer Todo</p>}
@@ -38,6 +33,7 @@ function AppUI({
             />
           ))}
         </TodoList>
+
         <CreateTodoButton />
         {/* <a href="https://www.flaticon.com/free-icons/feather" title="feather icons">Feather icons created by Freepik - Flaticon</a> */}
         {/* <a href="https://www.flaticon.com/free-icons/cross" title="cross icons">Cross icons created by Freepik - Flaticon</a> */}

@@ -12,7 +12,7 @@
 
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10% 10% 10% auto;
+  grid-template-rows: 10% 10% auto auto;
 
   background-image: url(resources/img/paper_texture_2.jpg);
   background-position: center;
