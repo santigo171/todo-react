@@ -8,8 +8,10 @@ import { CreateTodoButton } from "Components/CreateTodoButton.js";
 import "./App.css";
 
 function AppUI({
-  completedTasks,
-  totalTasks,
+  loading,
+  error,
+  completedTodos,
+  totalTodos,
   searchValue,
   setSearchValue,
   searchedTodos,
@@ -20,9 +22,12 @@ function AppUI({
     <div className="main">
       <div className="paper">
         <Date />
-        <TodoCounter completedTasks={completedTasks} totalTasks={totalTasks} />
+        <TodoCounter completedTodos={completedTodos} totalTodos={totalTodos} />
         <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
         <TodoList searchValue={searchValue}>
+          {error && <p>Hubo un error</p>}
+          {loading && <p>Cargando</p>}
+          {!loading && !searchedTodos.length && <p>Crea tu primer Todo</p>}
           {searchedTodos.map((todo) => (
             <TodoItem
               key={todo.text}

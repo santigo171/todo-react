@@ -1,20 +1,55 @@
 import React from "react";
 import { AppUI } from "./AppUI";
 
+function useLocalStorage(itemName, defaultValue) {
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState(false);
+  const [item, setItem] = React.useState(defaultValue);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      try {
+        const localStorageItem = localStorage.getItem(itemName);
+        let parsedItem;
+
+        if (localStorageItem) {
+          parsedItem = JSON.parse(localStorageItem);
+        } else {
+          parsedItem = defaultValue;
+          localStorage.setItem(itemName, JSON.stringify(parsedItem));
+        }
+
+        setItem(parsedItem);
+        setLoading(false);
+      } catch (err) {
+        setError(err);
+      }
+    }, 4000);
+  }, []);
+
+  const saveItem = (newTodos) => {
+    try {
+      const stringifiedTodos = JSON.stringify(newTodos);
+      localStorage.setItem(itemName, stringifiedTodos);
+      setItem(newTodos);
+    } catch (err) {
+      setError(err);
+    }
+  };
+
+  return { item, saveItem, loading, error };
+}
+
 function App() {
-  const localStorageTodos = localStorage.getItem("TODO_REACT_V1");
-  let parsedTodos;
+  const {
+    item: todos,
+    saveItem: saveTodos,
+    loading,
+    error,
+  } = useLocalStorage("TODO_REACT_V1", []);
 
-  if (localStorageTodos) {
-    parsedTodos = JSON.parse(localStorageTodos);
-  } else {
-    parsedTodos = [];
-    localStorage.setItem("TODO_REACT_V1", JSON.stringify(parsedTodos));
-  }
-
-  const [todos, setTodos] = React.useState(parsedTodos);
-  const completedTasks = todos.filter((todo) => todo.completed).length;
-  const totalTasks = todos.length;
+  const completedTodos = todos.filter((todo) => todo.completed).length;
+  const totalTodos = todos.length;
 
   let searchedTodos = [];
 
@@ -27,12 +62,6 @@ function App() {
   } else {
     searchedTodos = todos;
   }
-
-  const saveTodos = (newTodos) => {
-    const stringifiedTodos = JSON.stringify(newTodos);
-    localStorage.setItem("TODO_REACT_V1", stringifiedTodos);
-    setTodos(newTodos);
-  };
 
   const toggleCompleteTodo = (completedTodoText) => {
     const completedTodoIndex = todos.findIndex(
@@ -49,10 +78,16 @@ function App() {
     saveTodos(newTodos);
   };
 
+  // React.useEffect(() => {
+  //   console.log("use effect");
+  // }, [totalTodos]);
+
   return (
     <AppUI
-      completedTasks={completedTasks}
-      totalTasks={totalTasks}
+      loading={loading}
+      error={error}
+      completedTodos={completedTodos}
+      totalTodos={totalTodos}
       searchValue={searchValue}
       setSearchValue={setSearchValue}
       searchedTodos={searchedTodos}
