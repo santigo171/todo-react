@@ -6,9 +6,9 @@ function TodoItem(props) {
   let classesNames = ["TodoItem", "gridLayout"];
 
   if (props.completed) {
-    classesNames.push("TodoCompleted");
+    classesNames.push("TodoItem--Completed");
   } else {
-    classesNames.push("TodoUncompleted");
+    classesNames.push("TodoItem--Uncompleted");
   }
 
   return (

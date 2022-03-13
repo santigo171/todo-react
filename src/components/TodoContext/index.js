@@ -65,7 +65,7 @@ function TodoProvider(props) {
       const todoElement = todoListRef.current.children.item(repeatedTodoIndex);
 
       const topPos = todoElement.offsetTop;
-      todoListRef.current.scrollTop = topPos;
+      todoListRef.current.scrollTop = topPos - 35;
 
       todoElement.classList.add("TodoItem--Repeated");
       setTimeout(

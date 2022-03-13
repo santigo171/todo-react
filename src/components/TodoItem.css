@@ -54,25 +54,25 @@
   cursor: pointer;
 }
 
-.TodoUncompleted {
+.TodoItem--Uncompleted {
   color: var(--primary-color);
 }
 
-.TodoCompleted {
+.TodoItem--Completed {
   color: var(--secondary-color);
 }
 
-.TodoUncompleted > .TodoItem__circle {
+.TodoItem--Uncompleted > .TodoItem__circle {
   color: var(--primary-color);
   background-color: var(--complementary-color);
 }
 
-.TodoCompleted > .TodoItem__circle {
+.TodoItem--Completed > .TodoItem__circle {
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }
 
-.TodoCompleted > .TodoItem__content > .TodoItem__content__text {
+.TodoItem--Completed > .TodoItem__content > .TodoItem__content__text {
   text-decoration: line-through;
 }
 
