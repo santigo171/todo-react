@@ -1,0 +1,21 @@
+.gridLayout {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto;
+}
+
+.gridLayout--2 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 6% 90%;
+
+  grid-template-rows: auto;
+}
+
+.gridLayout--2 > * {
+  grid-column-start: 2;
+  justify-self: start;
+}

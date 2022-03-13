@@ -1,7 +1,0 @@
-.GridLayout {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: auto;
-}

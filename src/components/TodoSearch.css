@@ -12,15 +12,6 @@
   fill: var(--secondary-color);
 }
 
-.TodoSearch__input {
-  width: 100%;
-  justify-self: start;
-  font-family: var(--secondary-font);
-  font-size: 2.9rem;
-  border: none;
-  background: none;
-}
-
 .TodoSearch__input:focus {
   outline: none;
 }

@@ -1,9 +1,9 @@
 import React from "react";
-import "Library/common/css/GridLayout.css";
+import "Library/common/css/gridLayout.css";
 import "./TodoItem.css";
 
 function TodoItem(props) {
-  let classesNames = ["TodoItem", "GridLayout"];
+  let classesNames = ["TodoItem", "gridLayout"];
 
   if (props.completed) {
     classesNames.push("TodoCompleted");
@@ -11,7 +11,6 @@ function TodoItem(props) {
     classesNames.push("TodoUncompleted");
   }
 
-  const [fontSize, setFontSize] = React.useState("3.2rem");
   return (
     <div className={classesNames.join(" ")}>
       <span className="TodoItem__circle" onClick={props.deleteTodo}>
@@ -20,12 +19,11 @@ function TodoItem(props) {
       <div className="TodoItem__content">
         <p
           className="TodoItem__content__text"
-          style={{ fontSize: fontSize }}
           onClick={props.toggleCompleteTodo}
         >
           {props.text}
         </p>
-        <p className="TodoItem__content__date">Tomorrow 8:00AM</p>
+        {/* <p className="TodoItem__content__date">Tomorrow 8:00AM</p> */}
       </div>
     </div>
   );

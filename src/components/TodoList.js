@@ -1,11 +1,13 @@
 import React from "react";
 import "./TodoList.css";
 
-function TodoList({ searchValue, children }) {
+const TodoList = React.forwardRef(({ searchValue, children }, ref) => {
   if (children.length > 0) {
     return (
       <div className="TodoList">
-        <div className="TodoList__Children">{children}</div>
+        <div className="TodoList__Children" ref={ref}>
+          {children}
+        </div>
       </div>
     );
   } else if (searchValue !== "") {
@@ -21,6 +23,6 @@ function TodoList({ searchValue, children }) {
       </div>
     );
   }
-}
+});
 
 export { TodoList };

@@ -1,8 +1,10 @@
-.Date {
+.DateComponent {
   position: relative;
   bottom: -15px;
   align-self: end;
+}
 
+.DateComponent__p {
   font-family: var(--primary-font);
   font-weight: normal;
   font-size: 7.7rem;

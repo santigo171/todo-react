@@ -17,6 +17,8 @@ function TodoProvider(props) {
   let searchedTodos = [];
 
   const [searchValue, setSearchValue] = React.useState("");
+  const [newTodo, setNewTodo] = React.useState(null);
+  const todoListRef = React.useRef(null);
 
   if (searchValue.length > 0) {
     searchedTodos = todos.filter((todo) =>
@@ -41,6 +43,52 @@ function TodoProvider(props) {
     saveTodos(newTodos);
   };
 
+  const onNewTodoFocusOut = (e) => {
+    const finishedTodo = newTodo;
+    setNewTodo(undefined);
+
+    if (!finishedTodo.text) return;
+    if (finishedTodo.text.trim() === "") return;
+
+    const searchRepeatedTodos = (originalTodo) =>
+      todos.filter(
+        (todo) => todo.text.toLowerCase() === originalTodo.text.toLowerCase()
+      );
+
+    const repeatedTodos = searchRepeatedTodos(finishedTodo);
+
+    if (repeatedTodos.length > 0) {
+      const repeatedTodo = repeatedTodos[0];
+      const repeatedTodoIndex =
+        todos.findIndex((todo) => todo.text === repeatedTodo.text) + 1;
+
+      const todoElement = todoListRef.current.children.item(repeatedTodoIndex);
+
+      const topPos = todoElement.offsetTop;
+      todoListRef.current.scrollTop = topPos;
+
+      todoElement.classList.add("TodoItem--Repeated");
+      setTimeout(
+        () => todoElement.classList.remove("TodoItem--Repeated"),
+        2000
+      );
+
+      return;
+    }
+
+    const newTodos = [...todos];
+    newTodos.unshift(finishedTodo);
+    saveTodos(newTodos);
+  };
+
+  // document.addEventListener("keypress", function onEvent(event) {
+  //   if (event.key === "ArrowLeft") {
+  //     // Move Left
+  //   } else if (event.key === "Enter") {
+  //     // Open Menu...
+  //   }
+  // });
+
   return (
     <TodoContext.Provider
       value={{
@@ -53,6 +101,10 @@ function TodoProvider(props) {
         searchedTodos,
         toggleCompleteTodo,
         deleteTodo,
+        newTodo,
+        setNewTodo,
+        onNewTodoFocusOut,
+        todoListRef,
       }}
     >
       {props.children}

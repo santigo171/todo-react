@@ -1,3 +1,14 @@
 .CreateTodoButton {
-  background-color: #fff;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+
+  padding: 13px;
+  border-radius: 50%;
+  background-color: var(--complementary-color);
+}
+
+.CreateTodoButton__img {
+  width: 47px;
+  height: 47px;
 }

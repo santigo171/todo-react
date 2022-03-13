@@ -1,21 +1,71 @@
 .main {
+  position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #b2e6e1;
 }
 
 .paper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+
   height: 100%;
   width: 100%;
 
+  margin: 0;
+
+  background-image: var(--paper-background);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 70px;
+}
+
+.paper--principal {
   padding: 75px 35px;
 
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10% 10% auto auto;
+  grid-template-rows: 10% 10% 10% auto;
+}
 
-  background-image: url(resources/img/paper_texture_2.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 70px;
+.paper--decoration {
+  display: none;
+}
+
+@media only screen and (min-height: 820px) {
+  @media only screen and (min-width: 420px) {
+    .main {
+      background-image: var(--wooden-background);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .paper {
+      max-width: var(--paper-width);
+      max-height: var(--paper-height);
+    }
+
+    .paper--decoration {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      z-index: 1;
+    }
+
+    .paper--decoration--1 {
+      transform: translate(-50%, -50%) rotate(-2deg);
+      filter: brightness(80%);
+    }
+
+    .paper--decoration--2 {
+      transform: translate(-50%, -50%) rotate(3deg);
+      filter: brightness(80%) contrast(150%);
+    }
+  }
 }
