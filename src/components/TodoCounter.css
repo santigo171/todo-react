@@ -8,3 +8,10 @@
   font-weight: normal;
   font-size: 3.5rem;
 }
+@media only screen and (min-height: 718px) {
+  @media only screen and (min-width: 1400px) {
+    .TodoCounter__h2 {
+      font-size: 4.6rem;
+    }
+  }
+}

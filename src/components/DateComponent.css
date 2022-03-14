@@ -9,3 +9,9 @@
   font-weight: normal;
   font-size: 7.7rem;
 }
+
+@media only screen and (min-width: 1400px) {
+  .DateComponent__p {
+    font-size: 10rem;
+  }
+}

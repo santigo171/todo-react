@@ -6,6 +6,7 @@
   padding: 13px;
   border-radius: 50%;
   background-color: var(--complementary-color);
+  transform: translate3d(0, 0, 0);
 }
 
 .CreateTodoButton__img {

@@ -39,24 +39,33 @@
 
   --paper-width: 425px;
   --paper-height: 777px;
+  --coffee-size: 500px;
+  --PostIt-width: 470px;
+  --PostIt-height: 286px;
 
   --primary-breakpoint-height: 820px;
   --primary-breakpoint-width: 420px;
 
+  --secondary-breakpoint-width: 760px;
+  --tertiary-breakpoint-width: 1400px;
+
   --wooden-background: url(resources/img/wooden_background.jpg);
   --paper-background: url(resources/img/paper_texture_2.jpg);
+  --coffee-background: url(resources/img/coffee.png);
 }
 
 /* 
 @media only screen and (min-height: 820px) {
   @media only screen and (min-width: 420px) {
+    @media only screen and (min-width: 760px) {
     
 */
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  scroll-behavior: smooth;
+
+  overflow: hidden;
 }
 
 ul {

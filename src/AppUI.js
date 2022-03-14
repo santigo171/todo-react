@@ -5,12 +5,13 @@ import { TodoSearch } from "Components/TodoSearch.js";
 import { TodoList } from "Components/TodoList.js";
 import { TodoItem } from "Components/TodoItem.js";
 import { CreateTodoButton } from "Components/CreateTodoButton.js";
-import { NewTodo } from "./components/NewTodo";
+import { NewTodo } from "Components/NewTodo.js";
+import { PostIt } from "Components/PostIt.js";
 import "./App.css";
 
 import { TodoContext } from "Components/TodoContext";
 
-function AppUI() {
+const AppUI = React.forwardRef(() => {
   const {
     newTodo,
     error,
@@ -26,7 +27,6 @@ function AppUI() {
         <DateComponent />
         <TodoCounter />
         <TodoSearch />
-
         <TodoList ref={todoListRef}>
           {error && <p>Hubo un error</p>}
           {loading && <p>Cargando</p>}
@@ -51,8 +51,10 @@ function AppUI() {
       </div>
       <div className="paper paper--decoration paper--decoration--1"></div>
       <div className="paper paper--decoration paper--decoration--2"></div>
+      <div className="coffee"></div>
+      <PostIt />
     </div>
   );
-}
+});
 
 export { AppUI };

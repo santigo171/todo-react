@@ -81,14 +81,6 @@ function TodoProvider(props) {
     saveTodos(newTodos);
   };
 
-  // document.addEventListener("keypress", function onEvent(event) {
-  //   if (event.key === "ArrowLeft") {
-  //     // Move Left
-  //   } else if (event.key === "Enter") {
-  //     // Open Menu...
-  //   }
-  // });
-
   return (
     <TodoContext.Provider
       value={{

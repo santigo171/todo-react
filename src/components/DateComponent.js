@@ -1,6 +1,7 @@
 import "./DateComponent.css";
 import React from "react";
 import "Library/common/css/gridLayout.css";
+import { PostItElement } from "Library/utilities/PostItElement.js";
 
 function DateComponent() {
   const today = new Date();
@@ -33,11 +34,13 @@ function DateComponent() {
   ][month];
 
   return (
-    <div className="DateComponent gridLayout--2">
-      <h1 className="DateComponent__p">
-        {ordinalMonth} {ordinalDay}
-      </h1>
-    </div>
+    <PostItElement>
+      <div className="DateComponent gridLayout--2">
+        <h1 className="DateComponent__p">
+          {ordinalMonth} {ordinalDay}
+        </h1>
+      </div>
+    </PostItElement>
   );
 }
 

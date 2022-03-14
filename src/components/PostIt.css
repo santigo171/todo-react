@@ -1,0 +1,25 @@
+.PostIt {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: center;
+  justify-self: start;
+
+  height: var(--PostIt-height);
+  width: var(--PostIt-width);
+
+  display: none;
+  align-items: center;
+
+  background: linear-gradient(227.27deg, #fbe871 65.15%, #fdf69a 98.79%);
+  box-shadow: -14px -3px 20px -2px rgba(0, 0, 0, 0.25);
+  transform: rotate(-7deg);
+}
+
+.PostIt__children {
+}
+
+@media only screen and (min-width: 1400px) {
+  .PostIt {
+    display: grid;
+  }
+}
