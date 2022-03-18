@@ -1,0 +1,35 @@
+import React from "react";
+
+import "./Loading.css";
+import walking from "Resources/img/walking.gif";
+import { TodoContext } from "./TodoContext";
+
+export function Loading() {
+  const { loading } = React.useContext(TodoContext);
+  const LoadingRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (!loading) {
+      console.log("A");
+      const LoadingDiv = LoadingRef.current;
+
+      LoadingDiv.classList.add("fade-out");
+    }
+  }, [loading]);
+
+  return (
+    <div className="Loading fade-in" ref={LoadingRef}>
+      <div className="Loading__children">
+        <img
+          className="Loading__children__animation"
+          src={walking}
+          alt="Animation of someone walking"
+        />
+        <p className="Loading__children__text">
+          {loading && "Looking for your Tasks..."}
+          {!loading && "Found them!"}
+        </p>
+      </div>
+    </div>
+  );
+}

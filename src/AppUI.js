@@ -7,6 +7,7 @@ import { TodoItem } from "Components/TodoItem.js";
 import { CreateTodoButton } from "Components/CreateTodoButton.js";
 import { NewTodo } from "Components/NewTodo.js";
 import { PostIt } from "Components/PostIt.js";
+import { Loading } from "./components/Loading";
 import "./App.css";
 
 import { TodoContext } from "Components/TodoContext";
@@ -29,7 +30,7 @@ const AppUI = React.forwardRef(() => {
         <TodoSearch />
         <TodoList ref={todoListRef}>
           {error && <p>Hubo un error</p>}
-          {loading && <p>Cargando</p>}
+          <Loading />
           {!newTodo && !loading && !searchedTodos.length && (
             <p>Crea tu primer Todo</p>
           )}
