@@ -7,7 +7,10 @@ import { TodoItem } from "Components/TodoItem.js";
 import { CreateTodoButton } from "Components/CreateTodoButton.js";
 import { NewTodo } from "Components/NewTodo.js";
 import { PostIt } from "Components/PostIt.js";
-import { Loading } from "./components/Loading";
+import { Loading } from "Components/Loading";
+import { CreateFirstTodo } from "Components/CreateFirstTodo";
+import { Error } from "Components/Error";
+
 import "./App.css";
 
 import { TodoContext } from "Components/TodoContext";
@@ -15,8 +18,6 @@ import { TodoContext } from "Components/TodoContext";
 const AppUI = React.forwardRef(() => {
   const {
     newTodo,
-    error,
-    loading,
     searchedTodos,
     toggleCompleteTodo,
     deleteTodo,
@@ -29,11 +30,10 @@ const AppUI = React.forwardRef(() => {
         <TodoCounter />
         <TodoSearch />
         <TodoList ref={todoListRef}>
-          {error && <p>Hubo un error</p>}
+          <Error />
           <Loading />
-          {!newTodo && !loading && !searchedTodos.length && (
-            <p>Crea tu primer Todo</p>
-          )}
+          <CreateFirstTodo />
+
           {newTodo && <NewTodo></NewTodo>}
           {searchedTodos.map((todo) => (
             <TodoItem

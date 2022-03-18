@@ -46,6 +46,10 @@
   animation-delay: 1s;
 }
 
+.fade-out > .Loading__children {
+  display: grid;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -87,5 +91,9 @@
     width: 0;
     display: none;
     z-index: -1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 }

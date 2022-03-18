@@ -10,7 +10,6 @@ export function Loading() {
 
   React.useEffect(() => {
     if (!loading) {
-      console.log("A");
       const LoadingDiv = LoadingRef.current;
 
       LoadingDiv.classList.add("fade-out");
