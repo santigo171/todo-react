@@ -37,6 +37,11 @@
   --primary-font: "Ladylike bb", sans-serif;
   --secondary-font: "Pumpkin Cheesecake", sans-serif;
 
+  --main-width: 100vw;
+  --main-height: 100vh;
+  --main-max-width: 1550px;
+  --main-max-height: unset;
+
   --paper-width: 425px;
   --paper-height: 777px;
   --coffee-size: 500px;

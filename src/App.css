@@ -1,7 +1,7 @@
 .main {
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  height: var(--main-height);
+  width: var(--main-width);
 }
 
 .paper {
@@ -98,7 +98,8 @@
       @media only screen and (min-width: 1400px) {
         .main {
           display: grid;
-          max-width: 1550px;
+          max-width: var(--main-max-width);
+          max-height: var(--main-max-height);
           padding: 0 15%;
           grid-template-columns: 50% 45%;
           grid-template-rows: 50% 50%;
