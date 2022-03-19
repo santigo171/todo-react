@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TodoContext } from "./TodoContext";
+import { TodoContext } from "Components/TodoContext";
 import walking from "Resources/img/walking.gif";
 
 function CreateFirstTodo() {

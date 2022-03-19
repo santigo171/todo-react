@@ -1,7 +1,7 @@
 import React from "react";
 import "./CreateTodoButton.css";
 import quillPen from "Resources/img/quill_pen.png";
-import { TodoContext } from "./TodoContext";
+import { TodoContext } from "Components/TodoContext";
 
 function CreateTodoButton() {
   const { setNewTodo } = React.useContext(TodoContext);

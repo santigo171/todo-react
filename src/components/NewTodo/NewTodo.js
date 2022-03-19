@@ -1,9 +1,9 @@
 import React from "react";
-import { TodoContext } from "./TodoContext";
+import { TodoContext } from "Components/TodoContext";
 
 import TextareaAutosize from "@mui/base/TextareaAutosize";
 
-import "./TodoItem.css";
+import "Components/TodoItem/TodoItem.css";
 import "Library/common/css/cleanInput.css";
 
 import { NewTodoPlaceholders as placeholders } from "Resources/json/NewTodoPlaceholders.json";

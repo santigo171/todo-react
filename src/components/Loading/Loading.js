@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Loading.css";
 import walking from "Resources/img/walking.gif";
-import { TodoContext } from "./TodoContext";
+import { TodoContext } from "Components/TodoContext";
 
 export function Loading() {
   const { loading } = React.useContext(TodoContext);
