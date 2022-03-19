@@ -1,7 +1,7 @@
 import React from "react";
 
-import { TodoContext } from "Components/TodoContext";
-import walking from "Resources/img/walking.gif";
+import { TodoContext } from "@Components/TodoContext";
+import walking from "@Resources/img/walking.gif";
 
 function CreateFirstTodo() {
   const { newTodo, loading, searchedTodos } = React.useContext(TodoContext);

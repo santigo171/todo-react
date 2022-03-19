@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Error.scss"
-import { TodoContext } from "Components/TodoContext";
+import { TodoContext } from "@Components/TodoContext";
 
 function Error() {
   const { error } = React.useContext(TodoContext);

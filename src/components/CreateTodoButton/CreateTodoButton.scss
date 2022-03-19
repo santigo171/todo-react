@@ -1,3 +1,5 @@
+@import "../../scss/partials/variables";
+
 .CreateTodoButton {
   position: absolute;
   bottom: 40px;
@@ -5,7 +7,7 @@
 
   padding: 13px;
   border-radius: 50%;
-  background-color: var(--complementary-color);
+  background-color: $complementary-color;
   transform: translate3d(0, 0, 0);
 }
 

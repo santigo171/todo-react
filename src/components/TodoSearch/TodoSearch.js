@@ -1,11 +1,11 @@
 import React from "react";
 
 import "./TodoSearch.scss";
-import "Library/common/css/gridLayout.css";
-import "Library/common/css/cleanInput.css";
+import "@Library/common/css/gridLayout.css";
+import "@Library/common/css/cleanInput.css";
 
-import { ReactComponent as Lens } from "Resources/img/lens.svg";
-import { TodoContext } from "Components/TodoContext";
+import { ReactComponent as Lens } from "@Resources/img/lens.svg";
+import { TodoContext } from "@Components/TodoContext";
 
 function TodoSearch() {
   const { searchValue, setSearchValue } = React.useContext(TodoContext);

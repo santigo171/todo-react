@@ -1,19 +1,19 @@
 import React from "react";
-import { DateComponent } from "Components/DateComponent";
-import { TodoCounter } from "Components/TodoCounter";
-import { TodoSearch } from "Components/TodoSearch";
-import { TodoList } from "Components/TodoList";
-import { TodoItem } from "Components/TodoItem";
-import { CreateTodoButton } from "Components/CreateTodoButton";
-import { NewTodo } from "Components/NewTodo";
-import { PostIt } from "Components/PostIt";
-import { Loading } from "Components/Loading";
-import { CreateFirstTodo } from "Components/CreateFirstTodo";
-import { Error } from "Components/Error";
+import { DateComponent } from "@Components/DateComponent";
+import { TodoCounter } from "@Components/TodoCounter";
+import { TodoSearch } from "@Components/TodoSearch";
+import { TodoList } from "@Components/TodoList";
+import { TodoItem } from "@Components/TodoItem";
+import { CreateTodoButton } from "@Components/CreateTodoButton";
+import { NewTodo } from "@Components/NewTodo";
+import { PostIt } from "@Components/PostIt";
+import { Loading } from "@Components/Loading";
+import { CreateFirstTodo } from "@Components/CreateFirstTodo";
+import { Error } from "@Components/Error";
 
 import "./App.scss";
 
-import { TodoContext } from "Components/TodoContext";
+import { TodoContext } from "@Components/TodoContext";
 
 const AppUI = React.forwardRef(() => {
   const {

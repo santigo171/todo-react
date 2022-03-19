@@ -5,9 +5,9 @@
       {
         "root": ["./"],
         "alias": {
-          "Resources": "./src/resources",
-          "Components": "./src/components",
-          "Library": "./src/library"
+          "@Resources": "./src/resources",
+          "@Components": "./src/components",
+          "@Library": "./src/library"
         }
       }
     ]

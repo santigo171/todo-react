@@ -1,0 +1,35 @@
+// == COLORS ==
+$primary-color: #000000;
+$secondary-color: #5b5b5b;
+$complementary-color: #f48c06;
+$second-complementary-color: #c12c2c;
+$secondary-transparent-color: #5b5b5b88;
+$white: #fff;
+
+// == FONTS ==
+$primary-font: "Ladylike bb", sans-serif;
+$secondary-font: "Pumpkin Cheesecake", sans-serif;
+
+// == SIZES ==
+$main-width: 100vw;
+$main-height: 100vh;
+$main-max-width: 1550px;
+$main-max-height: unset;
+
+$paper-width: 425px;
+$paper-height: 777px;
+$coffee-size: 500px;
+$PostIt-width: 470px;
+$PostIt-height: 286px;
+
+// == BREAKPOINTS ==
+$primary-breakpoint-height: 820px;
+$primary-breakpoint-width: 420px;
+
+$secondary-breakpoint-width: 760px;
+$tertiary-breakpoint-width: 1400px;
+
+// == BACKGROUNDS ==
+$wooden-background: url(resources/img/wooden_background.jpg);
+$paper-background: url(resources/img/paper_texture_2.jpg);
+$coffee-background: url(resources/img/coffee.png);

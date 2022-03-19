@@ -1,5 +1,5 @@
 import React from "react";
-import "Library/common/css/gridLayout.css";
+import "@Library/common/css/gridLayout.css";
 import "./TodoItem.scss";
 
 function TodoItem(props) {
