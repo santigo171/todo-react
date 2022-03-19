@@ -1,10 +1,11 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Modal } from "@Library/utilities/Modal.js";
+import { Modal } from "@Library/utilities/Modal";
+import styles from "../../scss/partials/_export.scss"
 
 function PostItElement({ children }) {
-  const mediaQuery1 = useMediaQuery({ query: "(min-width: 1400px)" });
-  const mediaQuery2 = useMediaQuery({ query: "(min-height: 718px)" });
+  const mediaQuery1 = useMediaQuery({ query: `(min-width: ${styles["secondary-breakpoint-width"]})` });
+  const mediaQuery2 = useMediaQuery({ query: `(min-height: ${styles["primary-breakpoint-height"]})` });
   const needPostit = mediaQuery1 && mediaQuery2;
 
   return (

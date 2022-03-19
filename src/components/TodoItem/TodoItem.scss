@@ -1,3 +1,5 @@
+@import "../../scss/partials/variables";
+
 .TodoItem {
   margin: 45px 0;
   transition: background-color 1s;
@@ -10,14 +12,14 @@
   border-radius: 50%;
 
   font-size: 2.3rem;
-  font-family: var(--secondary-font);
-  color: var(--primary-color);
+  font-family: $secondary-font;
+  color: $primary-color;
   text-align: center;
   vertical-align: middle;
   line-height: 18px;
   transition: width 0.1s linear, height 0.1s linear, line-height 0.1s linear;
   cursor: pointer;
-  background-color: var(--complementary-color);
+  background-color: $complementary-color;
 }
 
 .TodoItem__circle > .TodoItem__circle__CheckMark {
@@ -43,34 +45,34 @@
   text-align: left;
   line-height: normal;
   font-size: 3.2rem;
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
 }
 
 .TodoItem__content__date {
   position: relative;
   top: -2.5px;
   font-size: 2rem;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
+  font-family: $secondary-font;
+  color: $secondary-color;
   cursor: pointer;
 }
 
 .TodoItem--Uncompleted {
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .TodoItem--Completed {
-  color: var(--secondary-color);
+  color: $secondary-color;
 }
 
 .TodoItem--Uncompleted > .TodoItem__circle {
-  color: var(--primary-color);
-  background-color: var(--complementary-color);
+  color: $primary-color;
+  background-color: $complementary-color;
 }
 
 .TodoItem--Completed > .TodoItem__circle {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  color: $primary-color;
+  background-color: $secondary-color;
 }
 
 .TodoItem--Completed > .TodoItem__content > .TodoItem__content__text {
@@ -78,5 +80,5 @@
 }
 
 .TodoItem--Repeated {
-  background-color: var(--secondary-transparent-color);
+  background-color: $secondary-transparent-color;
 }

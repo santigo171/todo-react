@@ -1,0 +1,8 @@
+@import "./variables";
+
+:export {
+  primary-breakpoint-height: $primary-breakpoint-height;
+  primary-breakpoint-width: $primary-breakpoint-width;
+  secondary-breakpoint-width: $secondary-breakpoint-width;
+  tertiary-breakpoint-width: $tertiary-breakpoint-width;
+}

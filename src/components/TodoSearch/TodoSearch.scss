@@ -1,15 +1,17 @@
+@import "../../scss/partials/variables";
+
 .TodoSearch {
   height: 37px;
   width: 100%;
   margin-bottom: 12px;
-  border-bottom: 2.5px solid var(--secondary-color);
+  border-bottom: 2.5px solid $secondary-color;
 }
 
 .TodoSearch__Lens {
   width: 16px;
   height: auto;
 
-  fill: var(--secondary-color);
+  fill: $secondary-color;
 }
 
 .TodoSearch__input:focus {

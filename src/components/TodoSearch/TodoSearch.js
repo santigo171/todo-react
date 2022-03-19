@@ -2,7 +2,7 @@ import React from "react";
 
 import "./TodoSearch.scss";
 import "@Library/common/css/gridLayout.css";
-import "@Library/common/css/cleanInput.css";
+import "@Library/common/css/cleanInput.scss";
 
 import { ReactComponent as Lens } from "@Resources/img/lens.svg";
 import { TodoContext } from "@Components/TodoContext";

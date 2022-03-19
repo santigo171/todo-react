@@ -1,15 +1,17 @@
+@import "../../scss/partials/variables";
+
 .TodoCounter {
   align-self: start;
 }
 
 .TodoCounter__h2 {
-  color: var(--secondary-color);
-  font-family: var(--secondary-font);
+  color: $secondary-color;
+  font-family: $secondary-font;
   font-weight: normal;
   font-size: 3.5rem;
 }
-@media only screen and (min-height: 718px) {
-  @media only screen and (min-width: 1400px) {
+@media only screen and (min-height: $primary-breakpoint-height) {
+  @media only screen and (min-width: $tertiary-breakpoint-width) {
     .TodoCounter__h2 {
       font-size: 4.6rem;
     }

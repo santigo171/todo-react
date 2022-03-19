@@ -1,11 +1,13 @@
+@import "../../scss/partials/variables";
+
 .PostIt {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   align-self: center;
   justify-self: start;
 
-  height: var(--PostIt-height);
-  width: var(--PostIt-width);
+  height: $PostIt-height;
+  width: $PostIt-width;
 
   display: none;
   align-items: center;
@@ -15,10 +17,7 @@
   transform: rotate(-7deg);
 }
 
-.PostIt__children {
-}
-
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: $tertiary-breakpoint-width) {
   .PostIt {
     display: grid;
   }
