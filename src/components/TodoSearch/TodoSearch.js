@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./TodoSearch.css";
+import "./TodoSearch.scss";
 import "Library/common/css/gridLayout.css";
 import "Library/common/css/cleanInput.css";
 

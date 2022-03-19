@@ -1,5 +1,5 @@
 import React from "react";
-import "./PostIt.css";
+import "./PostIt.scss";
 
 function PostIt({ children }) {
   return (

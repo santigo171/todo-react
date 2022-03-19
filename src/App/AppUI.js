@@ -11,7 +11,7 @@ import { Loading } from "Components/Loading";
 import { CreateFirstTodo } from "Components/CreateFirstTodo";
 import { Error } from "Components/Error";
 
-import "./App.css";
+import "./App.scss";
 
 import { TodoContext } from "Components/TodoContext";
 

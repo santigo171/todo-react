@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Loading.css";
+import "./Loading.scss";
 import walking from "Resources/img/walking.gif";
 import { TodoContext } from "Components/TodoContext";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Error.css"
+import "./Error.scss"
 import { TodoContext } from "Components/TodoContext";
 
 function Error() {

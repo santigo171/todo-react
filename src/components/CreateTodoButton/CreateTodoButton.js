@@ -1,5 +1,5 @@
 import React from "react";
-import "./CreateTodoButton.css";
+import "./CreateTodoButton.scss";
 import quillPen from "Resources/img/quill_pen.png";
 import { TodoContext } from "Components/TodoContext";
 

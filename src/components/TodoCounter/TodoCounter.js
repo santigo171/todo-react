@@ -1,6 +1,6 @@
 import React from "react";
 import { TodoContext } from "Components/TodoContext";
-import "./TodoCounter.css";
+import "./TodoCounter.scss";
 import "Library/common/css/gridLayout.css";
 import { PostItElement } from "Library/utilities/PostItElement.js";
 

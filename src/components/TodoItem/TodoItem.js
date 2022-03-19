@@ -1,6 +1,6 @@
 import React from "react";
 import "Library/common/css/gridLayout.css";
-import "./TodoItem.css";
+import "./TodoItem.scss";
 
 function TodoItem(props) {
   let classesNames = ["TodoItem", "gridLayout"];
