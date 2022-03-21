@@ -1,1 +1,23 @@
 @import "../../scss/partials/variables";
+
+.CreateFirstTodo {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.CreateFirstTodo__quote {
+    width: 80%;
+    height: 80%;
+    
+    display: grid;
+    grid-template-rows: 50% 25% 25%;
+    justify-items: center;
+}
+
+.CreateFirstTodo__quote__photo {
+    height: 100%;
+    max-width: 100%;
+}

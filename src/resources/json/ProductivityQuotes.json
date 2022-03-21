@@ -1,39 +1,39 @@
 {
     "ProductivityQuotes": [
         {
-            "quote": "Focus on being productive instead of busy",
-            "author": "Tim Ferriss",
-            "author_photo": "@Resources/img/author_photos/tim_ferriss.png"
-        },
-        {
-            "quote": "It's not knowing what to do, it's doing what you know",
-            "author": "Tony Robbins",
-            "author_photo": "@Resources/img/author_photos/tony_robbins.png"
+            "quote": "It is not the strongest of the species that survive, nor the most intelligent, but the ones most responsive to change.",
+            "author": "Charles Darwin",
+            "id": "charles_darwin"
         },
         {
             "quote": "Success is often achieved by those who don't know that failure is inevitable.",
             "author": "Coco Chanel",
-            "author_photo": "@Resources/img/author_photos/coco_chanel.png"
-        },
-        {
-            "quote": "The way to get started is to quit talking and begin doing.",
-            "author": "Walt Disney",
-            "author_photo": "@Resources/img/author_photos/walt_disney.png"
+            "id": "coco_chanel"
         },
         {
             "quote": "You don't have to see the whole staircase, just take the first step.",
             "author": "Martin Luther King",
-            "author_photo": "@Resources/img/author_photos/martin_luther_king.png"
+            "id": "martin_luther_king"
         },
         {
-            "quote": "It is not the strongest of the species that survive, nor the most intelligent, but the ones most responsive to change.",
-            "author": "Charles Darwin",
-            "author_photo": "@Resources/img/author_photos/charles_darwin.png"
+            "quote": "Focus on being productive instead of busy",
+            "author": "Tim Ferriss",
+            "id": "tim_ferriss"
         },
         {
             "quote": "Over the long run, the unglamorous habit of frequency fosters both productivity and creativity.",
             "author": "Gretchen Rubin",
-            "author_photo": "@Resources/img/author_photos/gretchen_rubin.png"
+            "id": "gretchen_rubin"
+        },
+        {
+            "quote": "It's not knowing what to do, it's doing what you know",
+            "author": "Tony Robbins",
+            "id": "tony_robbins"
+        },
+        {
+            "quote": "The way to get started is to quit talking and begin doing.",
+            "author": "Walt Disney",
+            "id": "walt_disney"
         }
     ]
 }
