@@ -11,14 +11,14 @@ import "./CreateFirstTodo.scss"
 const quote = ProductivityQuotes[Math.floor(Math.random()*ProductivityQuotes.length)];
 
 function CreateFirstTodo() {
-  const { newTodo, loading, searchedTodos } = React.useContext(TodoContext);
+  const { newTodo, loading, searchedTodos, searchValue } = React.useContext(TodoContext);
 
   const CreateFirstTodoRef = React.useRef(null);
   const [hideComponent, setHideComponent] = React.useState(false);
 
   React.useEffect(() => {
     const CreateFirstTodoDiv = CreateFirstTodoRef.current;
-    if (newTodo || searchedTodos.length) {
+    if (newTodo || (searchedTodos.length && searchValue)) {
       CreateFirstTodoDiv.classList.add("fade-out");
       setHideComponent(true);
     } else {

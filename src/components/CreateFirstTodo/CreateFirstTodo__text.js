@@ -12,7 +12,6 @@ function CreateFirstTodo__text({ hide }) {
 
     React.useEffect(() => {
         const CreateFirstTodo__textP = CreateFirstTodo__textRef.current
-        console.log(CreateFirstTodo__textP)
         if (CreateFirstTodo__textP) {
             if (hide) {
                 CreateFirstTodo__textP.classList.add("fade-out", "fade-out--CreateFirstTodo__text");
