@@ -9,15 +9,101 @@
 }
 
 .CreateFirstTodo__quote {
-    width: 80%;
-    height: 80%;
+    width: 100%;
     
     display: grid;
-    grid-template-rows: 50% 25% 25%;
+    grid-template-rows: 50% auto auto;
     justify-items: center;
 }
 
 .CreateFirstTodo__quote__photo {
-    height: 100%;
-    max-width: 100%;
+    width: 80%;
+    max-width: 190px;
 }
+
+.CreateFirstTodo__quote__text {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: $secondary-font;
+    color: $primary-color;
+}
+
+.CreateFirstTodo__quote__author {
+    width: 100%;
+    text-align: right;
+    font-size: 2rem;
+    font-family: $primary-font;
+    color: $secondary-color;
+}
+
+.CreateFirstTodo__text {
+    position: absolute;
+    bottom: 65px;
+    right: 120px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 2.2rem;
+    font-family: $secondary-font;
+    color: $complementary-color;
+}
+
+.CreateFirstTodo__text__arrow {
+    display: inline;
+    height: 20px;
+    margin-left: 7px;
+}
+
+.fade-out--CreateFirstTodo__text {
+    animation: fadeOut--CreateFirstTodo 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut--CreateFirstTodo {
+    from {
+      opacity: 1;
+    }
+    99% {
+      opacity: 0;
+      height: initial;
+      width: initial;
+      font-size: 2.2rem;
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+      width: 0;
+      font-size: 0px;
+    }
+}
+
+@media only screen and (min-height: $primary-breakpoint-height) {
+    @media only screen and (min-width: $primary-breakpoint-width) {
+        .CreateFirstTodo__quote {
+            grid-gap: 5px;
+            max-width: 200px;
+        }
+
+        .CreateFirstTodo__quote__text {
+            font-size: 2rem;
+        }
+
+        .CreateFirstTodo__quote__photo {
+            max-width: unset;
+        }
+
+        @media only screen and (min-width: $tertiary-breakpoint-width) {
+            .CreateFirstTodo__quote {
+                grid-gap: 15px;
+            }
+
+            .CreateFirstTodo__quote__photo {
+                width: 100%;
+            }
+
+            .CreateFirstTodo__quote__text {
+                font-size: 2.4rem;
+            }
+        }
+    }}

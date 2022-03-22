@@ -22,10 +22,11 @@ const AppUI = React.forwardRef(() => {
     toggleCompleteTodo,
     deleteTodo,
     todoListRef,
+    paperRef
   } = React.useContext(TodoContext);
   return (
     <div className="main">
-      <div className="paper paper--principal">
+      <div className="paper paper--principal" ref={paperRef}>
         <DateComponent />
         <TodoCounter />
         <TodoSearch />

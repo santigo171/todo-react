@@ -5,6 +5,9 @@
   bottom: 40px;
   right: 40px;
 
+  height: 70px;
+  width: 70px;
+
   padding: 13px;
   border-radius: 50%;
   background-color: $complementary-color;
@@ -12,6 +15,11 @@
 }
 
 .CreateTodoButton__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   width: 47px;
   height: 47px;
 }

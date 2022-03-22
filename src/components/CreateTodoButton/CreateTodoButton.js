@@ -1,6 +1,6 @@
 import React from "react";
 import "./CreateTodoButton.scss";
-import quillPen from "@Resources/img/quill_pen.png";
+import quillPen from "@Resources/img/icons/quill_pen.png";
 import { TodoContext } from "@Components/TodoContext";
 
 function CreateTodoButton() {

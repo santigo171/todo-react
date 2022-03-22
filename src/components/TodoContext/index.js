@@ -19,6 +19,7 @@ function TodoProvider(props) {
   const [searchValue, setSearchValue] = React.useState("");
   const [newTodo, setNewTodo] = React.useState(null);
   const todoListRef = React.useRef(null);
+  const paperRef = React.useRef(null);
 
   if (searchValue.length > 0) {
     searchedTodos = todos.filter((todo) =>
@@ -97,6 +98,7 @@ function TodoProvider(props) {
         setNewTodo,
         onNewTodoFocusOut,
         todoListRef,
+        paperRef
       }}
     >
       {props.children}
