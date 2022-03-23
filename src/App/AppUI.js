@@ -22,7 +22,8 @@ const AppUI = React.forwardRef(() => {
     toggleCompleteTodo,
     deleteTodo,
     todoListRef,
-    paperRef
+    paperRef,
+    searchValue
   } = React.useContext(TodoContext);
   return (
     <div className="main">
@@ -33,7 +34,7 @@ const AppUI = React.forwardRef(() => {
         <TodoList ref={todoListRef}>
           <Error />
           <Loading />
-          <CreateFirstTodo />
+          {!(searchedTodos.length > 0) && !(searchValue) && <CreateFirstTodo />}
 
           {newTodo && <NewTodo></NewTodo>}
           {searchedTodos.map((todo) => (

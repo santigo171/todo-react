@@ -26,7 +26,7 @@ function CreateFirstTodo__text({ hide }) {
     <Modal containerRef={paperRef}>
         <p ref={CreateFirstTodo__textRef} className="CreateFirstTodo__text fade-in">
             Create your first Todo!
-            <img src={arrow} className="CreateFirstTodo__text__arrow" />
+            <img src={arrow} className="CreateFirstTodo__text__arrow" alt="" />
         </p>
      </Modal>
     );

@@ -18,7 +18,12 @@ function CreateFirstTodo() {
 
   React.useEffect(() => {
     const CreateFirstTodoDiv = CreateFirstTodoRef.current;
-    if (newTodo || (searchedTodos.length && searchValue)) {
+    if (newTodo
+        || (searchedTodos.length && !searchValue) // There are todos, there isnt search value
+        || (!searchedTodos.length && searchValue) // There arent todos, there is search value
+        || (searchedTodos.length && searchValue) // There are todos, there is search value
+      )
+    {
       CreateFirstTodoDiv.classList.add("fade-out");
       setHideComponent(true);
     } else {
