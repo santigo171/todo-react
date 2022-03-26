@@ -68,8 +68,7 @@ textarea {
 
 .fade-out > *,
 .fade-out > * > *,
-.fade-out > * > * > *
-{
+.fade-out > * > * > * {
   display: grid;
   animation: displayNone 2s;
   animation-fill-mode: forwards;

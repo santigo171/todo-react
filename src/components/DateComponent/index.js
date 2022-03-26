@@ -1,1 +1,1 @@
-export { DateComponent } from "./DateComponent"
+export { DateComponent } from "./DateComponent";

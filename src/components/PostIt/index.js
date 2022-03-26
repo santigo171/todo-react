@@ -1,1 +1,1 @@
-export { PostIt } from "./PostIt"
+export { PostIt } from "./PostIt";

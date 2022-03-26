@@ -1,109 +1,110 @@
 @import "../../scss/partials/variables";
 
 .CreateFirstTodo {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .CreateFirstTodo__quote {
-    width: 100%;
-    
-    display: grid;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
 }
 
 .CreateFirstTodo__quote__photo {
-    width: 80%;
-    max-width: 190px;
+  width: 80%;
+  max-width: 190px;
 }
 
 .CreateFirstTodo__quote__text {
-    text-align: center;
-    font-size: 2.3rem;
-    font-family: $secondary-font;
-    color: $primary-color;
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: $secondary-font;
+  color: $primary-color;
 }
 
 .CreateFirstTodo__quote__author {
-    width: 100%;
-    text-align: right;
-    font-size: 2rem;
-    font-family: $primary-font;
-    color: $secondary-color;
+  width: 100%;
+  text-align: right;
+  font-size: 2rem;
+  font-family: $primary-font;
+  color: $secondary-color;
 }
 
 .CreateFirstTodo__text {
-    position: absolute;
-    bottom: 65px;
-    right: 120px;
+  position: absolute;
+  bottom: 65px;
+  right: 120px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    font-size: 2.2rem;
-    font-family: $secondary-font;
-    color: $complementary-color;
+  font-size: 2.2rem;
+  font-family: $secondary-font;
+  color: $complementary-color;
 }
 
 .CreateFirstTodo__text__arrow {
-    display: inline;
-    height: 20px;
-    margin-left: 7px;
+  display: inline;
+  height: 20px;
+  margin-left: 7px;
 }
 
 .fade-out--CreateFirstTodo__text {
-    animation: fadeOut--CreateFirstTodo 1s;
-    animation-fill-mode: forwards;
+  animation: fadeOut--CreateFirstTodo 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeOut--CreateFirstTodo {
-    from {
-      opacity: 1;
-    }
-    99% {
-      opacity: 0;
-      height: initial;
-      width: initial;
-      font-size: 2.2rem;
-    }
-    100% {
-      opacity: 0;
-      height: 0;
-      width: 0;
-      font-size: 0px;
-    }
+  from {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    height: initial;
+    width: initial;
+    font-size: 2.2rem;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    font-size: 0px;
+  }
 }
 
 @media only screen and (min-height: $primary-breakpoint-height) {
-    @media only screen and (min-width: $primary-breakpoint-width) {
-        .CreateFirstTodo__quote {
-            grid-gap: 5px;
-            max-width: 200px;
-        }
+  @media only screen and (min-width: $primary-breakpoint-width) {
+    .CreateFirstTodo__quote {
+      grid-gap: 5px;
+      max-width: 200px;
+    }
 
-        .CreateFirstTodo__quote__text {
-            font-size: 2rem;
-        }
+    .CreateFirstTodo__quote__text {
+      font-size: 2rem;
+    }
 
-        .CreateFirstTodo__quote__photo {
-            max-width: unset;
-        }
+    .CreateFirstTodo__quote__photo {
+      max-width: unset;
+    }
 
-        @media only screen and (min-width: $tertiary-breakpoint-width) {
-            .CreateFirstTodo__quote {
-                grid-gap: 15px;
-            }
+    @media only screen and (min-width: $tertiary-breakpoint-width) {
+      .CreateFirstTodo__quote {
+        grid-gap: 15px;
+      }
 
-            .CreateFirstTodo__quote__photo {
-                width: 100%;
-            }
+      .CreateFirstTodo__quote__photo {
+        width: 100%;
+      }
 
-            .CreateFirstTodo__quote__text {
-                font-size: 2.4rem;
-            }
-        }
-    }}
+      .CreateFirstTodo__quote__text {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}

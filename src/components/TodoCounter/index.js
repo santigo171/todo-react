@@ -1,1 +1,1 @@
-export { TodoCounter } from "./TodoCounter"
+export { TodoCounter } from "./TodoCounter";
