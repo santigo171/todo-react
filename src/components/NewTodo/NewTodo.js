@@ -1,12 +1,12 @@
 import React from "react";
-import { TodoContext } from "@Components/TodoContext";
+import { TodoContext } from "components/TodoContext";
 
 import TextareaAutosize from "@mui/base/TextareaAutosize";
 
-import "@Components/TodoItem/TodoItem.scss";
-import "@Library/common/css/cleanInput.scss";
+import "components/TodoItem/TodoItem.scss";
+import "library/common/css/cleanInput.scss";
 
-import { NewTodoPlaceholders as placeholders } from "@Resources/json/NewTodoPlaceholders.json";
+import { NewTodoPlaceholders as placeholders } from "resources/json/NewTodoPlaceholders.json";
 
 function NewTodo() {
   const random = (array) => array[Math.floor(Math.random() * array.length)];

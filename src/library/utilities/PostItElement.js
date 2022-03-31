@@ -1,6 +1,6 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Modal } from "@Library/utilities/Modal";
+import { Modal } from "library/utilities/Modal";
 import styles from "../../scss/partials/_export.scss";
 
 function PostItElement({ children }) {

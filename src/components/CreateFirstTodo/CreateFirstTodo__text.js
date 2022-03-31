@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Modal } from "@Library/utilities/Modal";
-import { TodoContext } from "@Components/TodoContext";
-import arrow from "@Resources/img/icons/arrow.png";
+import { Modal } from "library/utilities/Modal";
+import { TodoContext } from "components/TodoContext";
+import arrow from "resources/img/icons/arrow.png";
 
 import "./CreateFirstTodo.scss";
 

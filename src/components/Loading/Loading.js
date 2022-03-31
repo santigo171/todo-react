@@ -1,8 +1,8 @@
 import React from "react";
 
 import "./Loading.scss";
-import walking from "@Resources/img/walking.gif";
-import { TodoContext } from "@Components/TodoContext";
+import walking from "resources/img/walking.gif";
+import { TodoContext } from "components/TodoContext";
 
 export function Loading() {
   const { loading } = React.useContext(TodoContext);

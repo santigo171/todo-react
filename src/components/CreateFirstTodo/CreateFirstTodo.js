@@ -1,9 +1,9 @@
 import React from "react";
 
-import { TodoContext } from "@Components/TodoContext";
+import { TodoContext } from "components/TodoContext";
 import { CreateFirstTodo__text } from "./CreateFirstTodo__text";
 
-import { ProductivityQuotes } from "@Resources/json/ProductivityQuotes.json";
+import { ProductivityQuotes } from "resources/json/ProductivityQuotes.json";
 import { author_photos } from "./author_photos";
 
 import "./CreateFirstTodo.scss";

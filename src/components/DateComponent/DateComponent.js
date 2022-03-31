@@ -1,7 +1,7 @@
 import "./DateComponent.scss";
 import React from "react";
-import "@Library/common/css/gridLayout.css";
-import { PostItElement } from "@Library/utilities/PostItElement";
+import "library/common/css/gridLayout.css";
+import { PostItElement } from "library/utilities/PostItElement";
 
 function DateComponent() {
   const today = new Date();

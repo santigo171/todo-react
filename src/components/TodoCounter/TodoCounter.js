@@ -1,8 +1,8 @@
 import React from "react";
-import { TodoContext } from "@Components/TodoContext";
+import { TodoContext } from "components/TodoContext";
 import "./TodoCounter.scss";
-import "@Library/common/css/gridLayout.css";
-import { PostItElement } from "@Library/utilities/PostItElement.js";
+import "library/common/css/gridLayout.css";
+import { PostItElement } from "library/utilities/PostItElement.js";
 
 function TodoCounter() {
   const { completedTodos, totalTodos } = React.useContext(TodoContext);
