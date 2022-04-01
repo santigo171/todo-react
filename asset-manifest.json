@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/todo-react/static/css/main.f2ee5f48.chunk.css",
+    "main.js": "/todo-react/static/js/main.a9429530.chunk.js",
+    "main.js.map": "/todo-react/static/js/main.a9429530.chunk.js.map",
+    "runtime-main.js": "/todo-react/static/js/runtime-main.92cd31f8.js",
+    "runtime-main.js.map": "/todo-react/static/js/runtime-main.92cd31f8.js.map",
+    "static/js/2.931ed4fd.chunk.js": "/todo-react/static/js/2.931ed4fd.chunk.js",
+    "static/js/2.931ed4fd.chunk.js.map": "/todo-react/static/js/2.931ed4fd.chunk.js.map",
+    "index.html": "/todo-react/index.html",
+    "precache-manifest.c76da04c9e98bbddda302e04839a6056.js": "/todo-react/precache-manifest.c76da04c9e98bbddda302e04839a6056.js",
+    "service-worker.js": "/todo-react/service-worker.js",
+    "static/css/main.f2ee5f48.chunk.css.map": "/todo-react/static/css/main.f2ee5f48.chunk.css.map",
+    "static/js/2.931ed4fd.chunk.js.LICENSE.txt": "/todo-react/static/js/2.931ed4fd.chunk.js.LICENSE.txt",
+    "static/media/charles_darwin.png": "/todo-react/static/media/charles_darwin.c3cec71b.png",
+    "static/media/coco_chanel.png": "/todo-react/static/media/coco_chanel.8fa572a3.png",
+    "static/media/App.scss": "/todo-react/static/media/wooden_background.88508db8.jpg",
+    "static/media/gretchen_rubin.png": "/todo-react/static/media/gretchen_rubin.2b8e544a.png",
+    "static/media/index.scss": "/todo-react/static/media/pumpkin-cheesecake.cb8247f7.otf",
+    "static/media/lens.35e806ee.svg": "/todo-react/static/media/lens.35e806ee.svg",
+    "static/media/martin_luther_king.png": "/todo-react/static/media/martin_luther_king.d9b93ec6.png",
+    "static/media/thinking.gif": "/todo-react/static/media/thinking.37650ce3.gif",
+    "static/media/tim_ferriss.png": "/todo-react/static/media/tim_ferriss.2db3f1ba.png",
+    "static/media/tony_robbins.png": "/todo-react/static/media/tony_robbins.4f6bd904.png",
+    "static/media/walking.gif": "/todo-react/static/media/walking.d3a4976d.gif",
+    "static/media/walt_disney.png": "/todo-react/static/media/walt_disney.adb0cd98.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92cd31f8.js",
+    "static/js/2.931ed4fd.chunk.js",
+    "static/css/main.f2ee5f48.chunk.css",
+    "static/js/main.a9429530.chunk.js"
+  ]
+}
