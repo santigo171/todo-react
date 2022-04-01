@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Loading.scss";
-import walking from "resources/img/walking.gif";
+import walking from "resources/img/animations/walking.gif";
 import { TodoContext } from "components/TodoContext";
 
 export function Loading() {

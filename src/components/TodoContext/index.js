@@ -61,10 +61,9 @@ function TodoProvider(props) {
     if (repeatedTodos.length > 0) {
       const repeatedTodo = repeatedTodos[0];
       const repeatedTodoIndex =
-        todos.findIndex((todo) => todo.text === repeatedTodo.text) + 3;
+        todos.findIndex((todo) => todo.text === repeatedTodo.text) + 2;
 
       const todoElement = todoListRef.current.children.item(repeatedTodoIndex);
-      console.log(todoElement);
 
       const topPos = todoElement.offsetTop;
       todoListRef.current.scrollTop = topPos - 35;

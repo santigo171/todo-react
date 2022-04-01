@@ -1,0 +1,29 @@
+@import "../../scss/partials/variables";
+
+.NoMatch {
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.NoMatch__children {
+  width: 70%;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: auto auto;
+}
+
+.NoMatch__children__text {
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: $secondary-color;
+  font-family: $secondary-font;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.NoMatch__children__text__searchValue {
+  color: $complementary-color;
+}

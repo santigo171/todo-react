@@ -34,15 +34,6 @@ function NewTodo() {
   return (
     <div className="gridLayout">
       <span className="TodoItem__circle">X</span>
-      {/* <textarea
-        autoFocus
-        onBlur={onNewTodoFocusOut}
-        className="cleanInput"
-        rows={1}
-        placeholder={randomPlaceholder}
-        onChange={onNewTodoValueChange}
-        value={newTodo.text}
-      /> */}
       <TextareaAutosize
         autoFocus
         onBlur={onNewTodoFocusOut}

@@ -10,6 +10,7 @@ import { PostIt } from "components/PostIt";
 import { Loading } from "components/Loading";
 import { CreateFirstTodo } from "components/CreateFirstTodo";
 import { Error } from "components/Error";
+import { NoMatch } from "components/NoMatch";
 
 import "./App.scss";
 
@@ -34,7 +35,8 @@ const AppUI = React.forwardRef(() => {
         <TodoList ref={todoListRef}>
           <Error />
           <Loading />
-          {!(searchedTodos.length > 0) && !searchValue && <CreateFirstTodo />}
+          {searchedTodos.length === 0 && !searchValue && <CreateFirstTodo />}
+          {searchedTodos.length === 0 && !newTodo && searchValue && <NoMatch />}
 
           {newTodo && <NewTodo></NewTodo>}
           {searchedTodos.map((todo) => (
