@@ -1,78 +1,61 @@
-PROYECTO NO TERMINADO
-PROYECTO NO TERMINADO
-PROYECTO NO TERMINADO
-PROYECTO NO TERMINADO
-PROYECTO NO TERMINADO
-PROYECTO NO TERMINADO
+# Todo React
 
-# Getting Started with Create React App
+Github Pages Deploy: [https://santigo171.github.io/todo-react/][https://santigo171.github.io/todo-react/]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Github Repo: [https://github.com/santigo171/todo-react][https://github.com/santigo171/todo-react]
 
-## Available Scripts
+![Screenshot of the app](./public/docs_images/normal.jpg)
 
-In the project directory, you can run:
+> The most efficient app to administrate your tasks and your time.
+> \- Elon Musk
 
-### `npm start`
+Just kidding, this is an app coded with Javascript and React by [David Hurtado][david hurtado] (santigo171) made for the [Curso de Introducción a React.js][curso de introducción a react.js] course in Platzi.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is my first project in React, almost 40 hours were necessary to end with this result that I really love ♥.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## The process
 
-### `npm test`
+The process went from the design, taking the course and coding at the same time, implementing features that I wanted and fixing bugs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Designing
 
-### `npm run build`
+After feeling with strong bases in Html, Css and Javascript, I started designing my first React project. I used Figma to achieve this.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot of Figma design](./public/docs_images/figma_design.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Learning & Coding
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+At the same time I was taking the course, I started coding my first lines of React. [Juan David Castro][juan david castro] is one of the best online courses teachers that you will find, it wasn't hard to learn with his clear and step-by-step explanations.
+I was following the teacher but making my own project (I think that that's the idea of taking an online course)
 
-### `npm run eject`
+### Implementing features I wanted
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After feeling confident with React and finishing all course lessons, I started implementing my own desired features. Like:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Create first todo with a quote
+  ![Screenshot of app](./public/docs_images/create_first_todo.jpg)
+- No match screen
+  ![Screenshot of app](./public/docs_images/no_match.jpg)
+- Animations
+- Responsive design
+- Don't allow repeated todos
+- Completely different way of creating new todo
+- Sass
+- Much more
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Fixing bugs
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+As you already know, before this app I had no experience with React, bugs appeared and i didn't know why. But after this project I learnt a lot of things, for example, `"npm run eject"` is a headache.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## What's next?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I want to update this app and add other features like date support or convert into an Android/Ios app (Don't even know if its possible), but at the moment I will focus on other projects.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# todo-react
+[david hurtado]: http://santigo171.github.io "David Hurtado"
+[curso de introducción a react.js]: https://platzi.com/cursos/react/ "Curso de Introducción a React.js"
+[github pages deploy]: https://santigo171.github.io/todo-react/ "Github Pages Deploy"
+[https://santigo171.github.io/todo-react/]: https://santigo171.github.io/todo-react/ "https://santigo171.github.io/todo-react/"
+[https://github.com/santigo171/todo-react]: https://github.com/santigo171/todo-react "https://github.com/santigo171/todo-react"
+[juan david castro]: https://twitter.com/fjuandc "Juan David Castro"
